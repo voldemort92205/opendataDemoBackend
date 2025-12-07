@@ -1,6 +1,7 @@
-const express = require("express");
+import express from "express";
+import bikeInfo from "./modules/bikeInfo.js";
+
 const router = express.Router();
-const bikeInfo = require("./modules/bikeInfo");
 
 router.use("/bikeInfo", bikeInfo);
-module.exports = router;
+export default router;
